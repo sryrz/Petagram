@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acerca_de"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.curso.petagram.activity.AcercaDe"
+    android:background="#f0f0f0">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        ></include>
+
+    <TextView
+        android:id="@+id/tvDesarrolladorUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soraya Ruiz"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desarrollo de aplicaciones Android"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textSize="19dp"
+        android:layout_below="@id/tvDesarrolladorUno"/>
+
+</RelativeLayout>

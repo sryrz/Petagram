@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agregar_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.curso.petagram.activity.AgregarMascota">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        ></include>
+
+    <ImageView
+        android:id="@+id/uno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenEntero"
+        android:src="@drawable/imagen"
+        android:layout_below="@id/miActionBar"/>
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Mascota"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/texto_mascota"
+        android:layout_below="@id/uno"/>
+
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/creada"
+        android:onClick="volver"/>
+
+</RelativeLayout>

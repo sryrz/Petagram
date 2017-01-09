@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="elevation_actionbar">4dp</dimen>
+    <dimen name="texto_mascota">22dp</dimen>
+    <dimen name="margenEntero">30dp</dimen>
+    <dimen name="margenMedio">15dp</dimen>
+    <dimen name="margenGrande">80dp</dimen>
+    <dimen name="iconoUno">15dp</dimen>
+    <dimen name="iconoDos">22dp</dimen>
+    <dimen name="iconoTres">30dp</dimen>
+</resources>

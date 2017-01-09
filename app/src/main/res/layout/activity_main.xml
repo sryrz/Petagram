@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.curso.petagram.activity.MainActivity">
+
+    <!--<include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        ></include>-->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/miActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/footprint"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petagram"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:fontFamily="serif" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <!--<Button
+        android:id="@+id/btnFavoritos"
+        android:layout_width="@dimen/margenEntero"
+        android:layout_height="@dimen/margenEntero"
+        android:layout_below="@id/miActionBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margenEntero"
+        android:layout_marginRight="@dimen/margenEntero"
+        android:background="@drawable/star"
+
+        android:onClick="verFavoritos"/>-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/agregarMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margenEntero"
+        android:layout_marginBottom="@dimen/margenEntero"
+        android:src="@drawable/camara"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom"
+        android:clickable="true"
+        android:onClick="agregarMascota"/>
+
+</android.support.design.widget.CoordinatorLayout>
